@@ -1,7 +1,19 @@
-<html>
-  <body>
-      <h2>Loan Eligibility Result</h2>
-      <p>{{ prediction }}</p>
-      <a href="/logout">Logout</a>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Loan Eligibility Result</h2>
+        <p>Your loan eligibility status is:</p>
+        <div class="result">
+            <p><strong>{{ prediction }}</strong></p>
+        </div>
+        <a href="/logout">Logout</a>
+    </div>
+</body>
 </html>
